@@ -58,7 +58,7 @@ inputdf = pd.get_dummies(df,columns=['fuel','seller_type','transmission','owner'
 inputdf = inputdf.tail(1)
 
  
-model = pickle.load(open("./CarPricePrediction_rf.pkl","rb"))
+model = pickle.load(gzip.open("./CarPricePrediction_rf.pkl","rb"))
 
 result = model.predict(inputdf)
 
