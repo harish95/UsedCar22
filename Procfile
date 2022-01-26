@@ -1,1 +1,1 @@
-web: streamlit run CarApp.py
+web: sh setup.sh && streamlit run CarApp.py
