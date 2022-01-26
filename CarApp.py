@@ -9,7 +9,10 @@ import pandas as pd
 import streamlit as st
 from sklearn.ensemble import RandomForestRegressor
 import pickle 
+import zipfile
 
+with zipfile.ZipFile("./CarPricePrediction_rf.zip", 'r') as zip_ref:
+    zip_ref.extractall("./")
 
 st.image("./car.jpg")
 st.markdown("<h2 style='text-align:center;'>Used Car price Predictor</h2>",unsafe_allow_html=True)
