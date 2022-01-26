@@ -4,7 +4,7 @@ Created on Wed Jan 26 13:56:22 2022
 
 @author: harish
 """
-
+import gzip
 import pandas as pd
 import streamlit as st
 from sklearn.ensemble import RandomForestRegressor
